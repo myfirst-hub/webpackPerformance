@@ -4,7 +4,9 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rimraf bundle",
+    "build": "npm run clear && webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,24 @@
   "bugs": {
     "url": "https://github.com/myfirst-hub/webpackPerformance/issues"
   },
-  "homepage": "https://github.com/myfirst-hub/webpackPerformance#readme"
+  "homepage": "https://github.com/myfirst-hub/webpackPerformance#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.18.6",
+    "autoprefixer": "^8.0.0",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "rimraf": "^5.0.0",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "antd": "^5.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
